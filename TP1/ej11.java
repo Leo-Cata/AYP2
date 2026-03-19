@@ -24,11 +24,7 @@ public class ej11 {
 
 // para los 5 elementos, imprime * tantas veces sea el numero en posicion [i]
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < numeroIngresados[i]; j++) {
-                System.out.print("*");
-            }
-            //salto de linea
-            System.out.println();
+            System.out.println("*".repeat(numeroIngresados[i]));
         }
     }
 }
