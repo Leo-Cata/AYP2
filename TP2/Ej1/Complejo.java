@@ -14,7 +14,7 @@ public class Complejo {
 
     // metodo para sumar numeros imaginarios
     // Complejo actua como un tipo (int,void,string,etc) por lo que requiere que se retorne algo de tipo Complejo
-    public Complejo Suma(Complejo arg) {
+    public Complejo suma(Complejo arg) {
         float nuevoReal = this.parteReal + arg.parteReal;
         float nuevoImaginario = this.parteImaginaria + arg.parteImaginaria;
 
@@ -24,7 +24,7 @@ public class Complejo {
 
     // metodo para restar 2 numeros imaginarios
     // Complejo actua como un tipo (int,void,string,etc) por lo que requiere que se retorne algo de tipo Complejo
-    public Complejo Resta(Complejo arg) {
+    public Complejo resta(Complejo arg) {
         float nuevoReal = this.parteReal - arg.parteReal;
         float nuevoImaginario = this.parteImaginaria - arg.parteImaginaria;
 
@@ -34,7 +34,7 @@ public class Complejo {
 
     //metodo para multiplicar 2 numeros imaginarios
     // Complejo actua como un tipo (int,void,string,etc) por lo que requiere que se retorne algo de tipo Complejo
-    public Complejo Multiplicacion(Complejo arg) {
+    public Complejo multiplicacion(Complejo arg) {
         float nuevoReal = this.parteReal * arg.parteReal - this.parteImaginaria * arg.parteImaginaria;
         float nuevoImaginario = this.parteImaginaria * arg.parteReal / this.parteReal * arg.parteImaginaria;
 
@@ -44,7 +44,7 @@ public class Complejo {
 
     //metodo para obtener el Cociente 2 numeros imaginarios
     // Complejo actua como un tipo (int,void,string,etc) por lo que requiere que se retorne algo de tipo Complejo
-    public Complejo Cociente(Complejo arg) {
+    public Complejo cociente(Complejo arg) {
 
         // variables donde se calculan los cociente de ambos lados
         // formula para la parte real (Real1 × Real2) + (Imag1 × Imag2)/denominador
@@ -59,7 +59,7 @@ public class Complejo {
 
     // metodo para hacer la division de 2 numeros imaginarios
     // Complejo actua como un tipo (int,void,string,etc) por lo que requiere que se retorne algo de tipo Complejo
-    public Complejo Division(float escalar) {
+    public Complejo division(float escalar) {
         float nuevoReal = this.parteReal / escalar;
         float nuevoImaginario = this.parteImaginaria / escalar;
 
