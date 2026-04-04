@@ -55,4 +55,11 @@ public class Racional {
 
         return new Racional(nuevoNumerador, nuevoDenominador);
     }
+
+    // override indica al compilador que se sobreescribe el metodo estandar de impresion
+    // entonces utiliza esta manera cuando se use un println
+    @Override
+    public String toString() {
+        return this.numerador + "/" + this.denominador;
+    }
 }
