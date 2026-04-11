@@ -127,6 +127,10 @@ public String calcularDiasEntreFechas(Fecha fecha){
     }
 
     // metodo para calcular una nueva fecha a partir de la suma de una fecha y dias
+    public Fecha sumarFechaDias(int dias){
+
+        return new Fecha(dias, dias, dias);
+    }
 
     // metodo para imprimer con println la fecha
     @Override
