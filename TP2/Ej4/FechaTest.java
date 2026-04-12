@@ -21,5 +21,8 @@ public class FechaTest {
 */
         System.out.println("Comparacion de fechas");
         System.out.println(fecha1.calcularDiasEntreFechas(fecha2));
+
+        System.out.println("Sumar dias");
+        System.out.println(fecha1.sumarDias(100));
     }
 }

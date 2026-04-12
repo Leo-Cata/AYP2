@@ -127,9 +127,16 @@ public String calcularDiasEntreFechas(Fecha fecha){
     }
 
     // metodo para calcular una nueva fecha a partir de la suma de una fecha y dias
-    public Fecha sumarFechaDias(int dias){
+    public Fecha sumarDias(int dias){
+        Fecha nuevaFecha = this;
 
-        return new Fecha(dias, dias, dias);
+        // loop para sumar dias tantas veces se haya pasado
+        while(dias !=0){
+            nuevaFecha= nuevaFecha.incrementarDia();
+            dias--;
+        }
+
+        return nuevaFecha;
     }
 
     // metodo para imprimer con println la fecha
