@@ -1,5 +1,3 @@
-package EjemploTP3;
-
 import java.util.Objects;
 
 public class Alumno {
