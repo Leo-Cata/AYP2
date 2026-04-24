@@ -16,6 +16,12 @@ public class EmpleadoAsalariado extends Empleado{
         this.salarioMensual = salario;
     }
 
+    // implementacion obtener pago
+    @Override
+    public double obtenerPago() {
+    	return (double) this.salarioMensual;
+    }
+    
     // metodo para imprimir por pantalla, con super.toString llama al metodo de toString de la clase superior
     @Override
     public String toString(){

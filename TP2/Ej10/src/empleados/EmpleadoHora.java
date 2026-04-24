@@ -1,6 +1,6 @@
 package empleados;
 
-public class EmpleadoHora  extends Empleado{
+public class EmpleadoHora extends Empleado{
     private float valorHora,horasTrabajadas;
 
     public EmpleadoHora(String nombre, int DNI, float valorHora,float horasTrabajas){
@@ -10,6 +10,12 @@ public class EmpleadoHora  extends Empleado{
         //setea los valores pasados
         this.valorHora=valorHora;
         this.horasTrabajadas=horasTrabajas;
+    }
+    
+    // metodo para obtenerPago
+    @Override
+    public double obtenerPago() {
+    	return (double)this.valorHora * this.horasTrabajadas;
     }
 
     // getters y setters para las variables de esta clase

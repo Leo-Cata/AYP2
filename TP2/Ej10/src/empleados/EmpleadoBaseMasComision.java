@@ -4,9 +4,9 @@ public class EmpleadoBaseMasComision extends EmpleadoComision{
     private float salarioBase;
 
     //constucto de la clase
-    public EmpleadoBaseMasComision(String nombre, int DNI, float porcentaje, float salario){
-        super(nombre, DNI, porcentaje);
-        this.salarioBase=salario;
+    public EmpleadoBaseMasComision(String nombre, int DNI, float porcentaje, float salarioBase, float ventasTotales){
+        super(nombre, DNI, porcentaje,ventasTotales);
+        this.salarioBase=salarioBase;
     }
 
     // getter y setter del salario base
@@ -15,6 +15,12 @@ public class EmpleadoBaseMasComision extends EmpleadoComision{
     }
     public float getSalarioBase() {
         return salarioBase;
+    }
+    
+    //metodo para obtener el pago
+    @Override
+    public double obtenerPago() {
+    	return (double) this.salarioBase + (this.getVentasTotales()*this.getPorcentajeVentas()/100);
     }
     
     // metodo para imprimir todos los datos

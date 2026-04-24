@@ -1,0 +1,1 @@
+Crear una clase Banco que contenga una lista de clientes y una lista de cuentas bancarias. Crear métodos dentro de la clase Banco para calcular la suma total de los saldos de cada cliente y la suma total de los saldos negativos de los clientes que tienen cuenta corriente.

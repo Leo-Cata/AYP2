@@ -1,6 +1,8 @@
 package empleados;
 
-public class Empleado {
+import factura.PorPagar;
+
+public abstract class Empleado implements PorPagar{
 
     // datos de los empleados
     private String nombre;
@@ -28,7 +30,10 @@ public class Empleado {
     public int getDNI() {
         return DNI;
     }
-
+    
+    
+   public abstract double obtenerPago();
+   
     // metoddo par imprimir como string los datos
     @Override
     public String toString() {
